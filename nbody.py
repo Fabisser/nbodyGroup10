@@ -119,7 +119,7 @@ def offset_momentum(ref, bodies=SYSTEM, px=0.0, py=0.0, pz=0.0):
 
 def main(n, ref="sun"):
     tic = time.time()
-    f = open("nbodypython2.csv", "w")
+    f = open("nbodypython.csv", "w")
     f.write("body;posx;posy;posz\n")
     offset_momentum(BODIES[ref])
     report_energy()
@@ -127,7 +127,7 @@ def main(n, ref="sun"):
     report_energy()
     toc= time.time()
     print("Time Elapsed:" + str(toc-tic))
-    os.remove("nbodypython2.csv")
+    os.remove("nbodypython.csv")
     
     
 
