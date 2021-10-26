@@ -273,7 +273,7 @@ int main(int argc, char **argv) {
         std::chrono::duration<double> elapsed_seconds = toc - tic;
         std::cout << "Elapsed time: " << elapsed_seconds.count();
         //Remove file: Comment the following to create a file
-        const int result = remove("nbodycpp2.csv");
+        const int result = remove("nbodycpp.csv");
         return EXIT_SUCCESS;
     }
 
